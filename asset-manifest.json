@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/react-typescript-todo-list/static/css/main.19d52b14.css",
+    "main.js": "/react-typescript-todo-list/static/js/main.7dead467.js",
+    "static/media/Gilroy-Medium.woff": "/react-typescript-todo-list/static/media/Gilroy-Medium.2bc7f5d7ea77ee1bddb3.woff",
+    "static/media/Gilroy-Bold.woff": "/react-typescript-todo-list/static/media/Gilroy-Bold.5fb38b9fa452b5814397.woff",
+    "static/media/Gilroy-Regular.woff": "/react-typescript-todo-list/static/media/Gilroy-Regular.31d54a4b841c0e438f13.woff",
+    "static/media/cross.svg": "/react-typescript-todo-list/static/media/cross.4e5c77860b8db409f93b.svg",
+    "static/media/check-mark.svg": "/react-typescript-todo-list/static/media/check-mark.edf55cd62f7333c5d38f.svg",
+    "index.html": "/react-typescript-todo-list/index.html",
+    "main.19d52b14.css.map": "/react-typescript-todo-list/static/css/main.19d52b14.css.map",
+    "main.7dead467.js.map": "/react-typescript-todo-list/static/js/main.7dead467.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.19d52b14.css",
+    "static/js/main.7dead467.js"
+  ]
+}
