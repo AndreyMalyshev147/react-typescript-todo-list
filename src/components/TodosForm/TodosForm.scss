@@ -1,0 +1,103 @@
+.todoform {
+
+  &__container {
+    margin-bottom: 40vw * $desktop;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__input {
+    margin-right: 25vw * $desktop;
+
+    & input {
+      width: 300vw * $desktop;
+      padding: 10vw * $desktop;
+      border: 1vw * $desktop solid rgba($black, 0.1);
+      border-radius: 5vw * $desktop;
+      background: rgba($black, 0.025);
+      font-weight: 500;
+      font-size: 18vw * $desktop;
+      color: $black;
+      outline: none;
+    }
+  }
+
+  &__button {
+
+    & button {
+      padding: 10vw * $desktop 20vw * $desktop;
+      border: none;
+      border-radius: 15vw * $desktop;
+      background: $black;
+      font-weight: 500;
+      color: $white;
+    }
+  }
+}
+
+@include mobile {
+  .todoform {
+
+    &__container {
+      margin-bottom: 40vw * $mobile;
+    }
+
+    &__form {
+      justify-content: space-between;
+    }
+
+    &__input {
+      width: 100%;
+      margin-right: 25vw * $mobile;
+
+      & input {
+        width: 100%;
+        padding: 10vw * $mobile;
+        border: 1vw * $mobile solid rgba($black, 0.1);
+        border-radius: 5vw * $mobile;
+        font-size: 12vw * $mobile;
+      }
+    }
+
+    &__button {
+
+      & button {
+        padding: 10vw * $mobile 20vw * $mobile;
+        border-radius: 15vw * $mobile;
+      }
+    }
+  }
+}
+
+@include high-screen {
+  .todoform {
+
+    &__container {
+      margin-bottom: 40px;
+    }
+
+    &__input {
+      margin-right: 25px;
+
+      & input {
+        width: 300px;
+        padding: 10px;
+        border: 1px solid rgba($black, 0.1);
+        border-radius: 5px;
+        font-size: 18px;
+      }
+    }
+
+    &__button {
+
+      & button {
+        padding: 10px 20px;
+        border-radius: 15px;
+      }
+    }
+  }
+}

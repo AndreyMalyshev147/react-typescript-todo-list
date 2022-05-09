@@ -1,0 +1,167 @@
+.todoitem {
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15vw * $desktop;
+    padding: 20vw * $desktop;
+    border-radius: 15vw * $desktop;
+    background: rgba($black, 0.05);
+    transition: all 0.3s;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      background: rgba($black, 0.1);
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__check-mark {
+
+    & label {
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      & input {
+        width: 20vw * $desktop;
+        height: 20vw * $desktop;
+        margin-right: 10vw * $desktop;
+        border: 1vw * $desktop solid $black;
+        border-radius: 5vw * $desktop;
+        appearance: none;
+
+        &:checked {
+          width: 20vw * $desktop;
+          height: 20vw * $desktop;
+          background-image: url('../../assets/img/check-mark.svg');
+          background-repeat: no-repeat;
+          background-position: center;
+          -webkit-background-size: 15vw * $desktop 15vw * $desktop;
+          background-size: 15vw * $desktop 15vw * $desktop;
+        }
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 18vw * $desktop;
+    color: $black;
+
+    &--completed {
+      font-weight: 500;
+      font-size: 18vw * $desktop;
+      text-decoration: line-through;
+      color: $black;
+    }
+  }
+
+  &__delete {
+    width: 20vw * $desktop;
+    height: 20vw * $desktop;
+    background-image: url('../../assets/img/cross.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+  }
+}
+
+@include mobile {
+  .todoitem {
+
+    &__container {
+      margin-bottom: 15vw * $mobile;
+      padding: 15vw * $mobile;
+      border-radius: 15vw * $mobile;
+    }
+
+    &__check-mark {
+
+      & label {
+
+        & input {
+          width: 20vw * $mobile;
+          height: 20vw * $mobile;
+          margin-right: 10vw * $mobile;
+          border: 1vw * $mobile solid $black;
+          border-radius: 5vw * $mobile;
+
+          &:checked {
+            width: 20vw * $mobile;
+            height: 20vw * $mobile;
+            -webkit-background-size: 15vw * $mobile 15vw * $mobile;
+            background-size: 15vw * $mobile 15vw * $mobile;
+          }
+        }
+      }
+    }
+
+    &__title {
+      font-size: 12vw * $mobile;
+
+      &--completed {
+        font-size: 12vw * $mobile;
+      }
+    }
+
+    &__delete {
+      width: 20vw * $mobile;
+      height: 20vw * $mobile;
+    }
+  }
+}
+
+@include high-screen {
+  .todoitem {
+
+    &__container {
+      margin-bottom: 15px;
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+    &__check-mark {
+
+      & label {
+
+        & input {
+          width: 20px;
+          height: 20px;
+          margin-right: 10px;
+          border: 1px solid $black;
+          border-radius: 5px;
+
+          &:checked {
+            width: 20px;
+            height: 20px;
+            -webkit-background-size: 15px 15px;
+            background-size: 15px 15px;
+          }
+        }
+      }
+    }
+
+    &__title {
+      font-size: 18px;
+
+      &--completed {
+        font-size: 18px;
+      }
+    }
+
+    &__delete {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

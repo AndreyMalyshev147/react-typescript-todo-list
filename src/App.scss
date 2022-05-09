@@ -1,0 +1,18 @@
+/* UTILS */
+@import "./assets/style/utils/variables";
+@import "./assets/style/utils/fonts";
+@import "./assets/style/utils/mixins";
+
+
+/* RESET */
+@import "./assets/style/reset/reset";
+
+
+/* MAIN */
+@import "./assets/style/main/main";
+
+
+/* COMPONENTS */
+@import "components/TodoList/TodoList";
+@import "components/TodosItem/TodosItem";
+@import "components/TodosForm/TodosForm";

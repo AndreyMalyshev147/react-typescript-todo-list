@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
+  background: linear-gradient(291.8deg, #0F38E9 -26.41%, #FF4040 83.2%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 16vw * $desktop;
+}
+
+a, p, span, div {
+  display: block;
+  color: $white;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input, textarea, button {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+@include mobile {
+
+  body {
+    font-size: 12vw * $mobile;
+  }
+}
+
+@include high-screen {
+
+  body {
+    font-size: 16px;
+  }
+}
